@@ -1,44 +1,39 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <!-- Заголовок та підключення -->
+  <!-- Заголовок та підключення стилів -->
 </head>
 <body>
-  <header>
-    <h1><i class="fas fa-newspaper"></i> Офіційні новини</h1>
-    <nav>
-      <!-- Навігація (як у index.html) -->
-    </nav>
-  </header>
+  <header><!-- Як у statements.html --></header>
 
-  <main>
-    <section class="news-container">
-      <h2 class="section-title">Останні події</h2>
-      
-      <article class="news-card">
-        <div class="news-header">
-          <span class="news-date">15 ЧЕРВНЯ 2024</span>
-          <span class="news-tag breaking">Терміново</span>
-        </div>
-        <h3>Затримання корупціонера</h3>
-        <p>Сьогодні було затримано високопоставленого чиновника за зловживання службовим становищем...</p>
-        <a href="#" class="news-button">Читати далі <i class="fas fa-chevron-right"></i></a>
+  <main class="container">
+    <section class="news-archive">
+      <h2><i class="fas fa-newspaper"></i> Архів новин</h2>
+      <div class="filter-bar">
+        <input type="text" placeholder="Пошук за ключовими словами...">
+        <select>
+          <option>Усі категорії</option>
+          <option>Кримінальні справи</option>
+          <option>Реформи</option>
+        </select>
+      </div>
+
+      <article class="news-article">
+        <div class="article-date">20.05.2024</div>
+        <h3>Затримання корупціонера у Києві</h3>
+        <p>Спільна операція з НАБУ викрила схему отримання хабарів...</p>
+        <a href="#" class="read-more">Читати далі <i class="fas fa-arrow-right"></i></a>
       </article>
 
-      <article class="news-card">
-        <div class="news-header">
-          <span class="news-date">12 ЧЕРВНЯ 2024</span>
-          <span class="news-tag update">Оновлення</span>
-        </div>
-        <h3>Зміни в кримінальному кодексі</h3>
-        <p>Верховна Рада ухвалила зміни до статті 190 ККУ...</p>
-        <a href="#" class="news-button">Читати далі <i class="fas fa-chevron-right"></i></a>
+      <article class="news-article">
+        <div class="article-date">18.05.2024</div>
+        <h3>Зміни в процедурі апеляцій</h3>
+        <p>Оновлення КПК стосовно строків подачі скарг...</p>
+        <a href="#" class="read-more">Читати далі <i class="fas fa-arrow-right"></i></a>
       </article>
     </section>
   </main>
 
-  <footer>
-    <!-- Футер (як у index.html) -->
-  </footer>
+  <footer><!-- Підвал --></footer>
 </body>
 </html>
