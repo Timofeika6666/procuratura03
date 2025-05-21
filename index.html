@@ -1,31 +1,102 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Прокуратура - Головна</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Генеральна Прокуратура | Офіційний сайт</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Офіційний сайт Прокуратури</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="news.html">Новини</a></li>
-                <li><a href="decrees.html">Укази</a></li>
-                <li><a href="statements.html">Заяви</a></li>
-                <li><a href="about.html">Про нас</a></li>
-                <li><a href="law.html">Закон</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2>Ласкаво просимо!</h2>
-        <p>Тут ви знайдете офіційну інформацію від Прокуратури.</p>
-    </main>
-    <footer>
-        <p>© 2025 Прокуратура. Усі права захищені.</p>
-    </footer>
+  <header>
+    <div class="container">
+      <h1><i class="fas fa-scale-balanced"></i> Генеральна Прокуратура</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Головна</a></li>
+          <li><a href="news.html">Новини</a></li>
+          <li><a href="decrees.html">Укази</a></li>
+          <li><a href="statements.html">Заяви</a></li>
+          <li><a href="about.html">Про нас</a></li>
+          <li><a href="law.html">Закон</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Правосуддя. Честність. Професіоналізм.</h2>
+      <p>Ми гарантуємо дотримання законів та захищаємо права кожного громадянина</p>
+      <a href="news.html" class="cta-button">Останні події <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="features-grid">
+      <div class="feature-card">
+        <i class="fas fa-gavel"></i>
+        <h3>Судові рішення</h3>
+        <p>Аналіз та публікація ключових судових рішень</p>
+        <div class="wave-hover"></div>
+      </div>
+      
+      <div class="feature-card">
+        <i class="fas fa-hand-holding-heart"></i>
+        <h3>Допомога</h3>
+        <p>Юридична підтримка та консультації</p>
+        <div class="wave-hover"></div>
+      </div>
+      
+      <div class="feature-card">
+        <i class="fas fa-file-contract"></i>
+        <h3>Документи</h3>
+        <p>Офіційні укази та нормативні акти</p>
+        <div class="wave-hover"></div>
+      </div>
+    </section>
+
+    <section class="animated-section">
+      <h2 class="section-title">Наші пріоритети</h2>
+      <div class="priority-list">
+        <div class="priority-item" style="--delay: 0.2s">
+          <div class="priority-icon"><i class="fas fa-shield-alt"></i></div>
+          <h4>Боротьба з корупцією</h4>
+          <p>Системна протидія зловживанням владою</p>
+        </div>
+        <div class="priority-item" style="--delay: 0.4s">
+          <div class="priority-icon"><i class="fas fa-balance-scale-right"></i></div>
+          <h4>Верховенство права</h4>
+          <p>Забезпечення рівності перед законом</p>
+        </div>
+        <div class="priority-item" style="--delay: 0.6s">
+          <div class="priority-icon"><i class="fas fa-user-tie"></i></div>
+          <h4>Професійний розвиток</h4>
+          <p>Постійне навчання працівників</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <i class="fas fa-scale-balanced"></i>
+        <span>Генеральна Прокуратура</span>
+      </div>
+      <div class="footer-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Всі права захищені</p>
+    </div>
+  </footer>
+
+  <script src="js/animations.js"></script>
 </body>
 </html>
