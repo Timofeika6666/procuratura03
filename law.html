@@ -7,29 +7,59 @@
   <header><!-- Як раніше --></header>
 
   <main class="container">
-    <section class="law-search">
-      <h2><i class="fas fa-book-law"></i> Нормативні акти</h2>
-      <input type="text" placeholder="Введіть номер закону або назву..." class="search-bar">
+    <section class="law-database">
+      <h2 class="section-title"><i class="fas fa-gavel"></i> Законодавча база</h2>
       
-      <div class="law-categories">
-        <div class="category-card">
-          <i class="fas fa-gavel"></i>
-          <h3>Кримінальний кодекс</h3>
-          <a href="#">Перейти до розділу</a>
+      <div class="law-search">
+        <div class="search-container">
+          <input type="text" placeholder="Пошук за назвою або номером...">
+          <button class="search-btn">
+            <i class="fas fa-search"></i>
+          </button>
         </div>
-        <div class="category-card">
-          <i class="fas fa-balance-scale"></i>
-          <h3>КПК України</h3>
-          <a href="#">Перейти до розділу</a>
+        <div class="advanced-search">
+          <a href="#">Розширений пошук <i class="fas fa-sliders-h"></i></a>
         </div>
       </div>
-
+      
+      <div class="law-categories">
+        <div class="category-card hover-grow">
+          <div class="category-icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <h3>Кримінальний кодекс</h3>
+          <p>Актуальна редакція</p>
+          <a href="#" class="category-link">
+            Перейти <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        
+        <div class="category-card hover-grow">
+          <div class="category-icon">
+            <i class="fas fa-balance-scale"></i>
+          </div>
+          <h3>КПК України</h3>
+          <p>Процесуальний кодекс</p>
+          <a href="#" class="category-link">
+            Перейти <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      
       <div class="recent-updates">
-        <h3><i class="fas fa-history"></i> Останні зміни</h3>
-        <ul>
-          <li><a href="#">Закон №1234 від 12.05.2024 (про конфіскацію)</a></li>
-          <li><a href="#">Постанова №567 від 01.05.2024</a></li>
-        </ul>
+        <h3><i class="fas fa-history"></i> Останні оновлення</h3>
+        <div class="updates-list">
+          <div class="update-item">
+            <div class="update-badge">Ново</div>
+            <div class="update-content">
+              <h4>Закон №1234 від 12.05.2024</h4>
+              <p>Про внесення змін до КК України</p>
+            </div>
+            <a href="#" class="download-btn">
+              <i class="fas fa-download"></i>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
