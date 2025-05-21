@@ -1,34 +1,26 @@
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Прокуратура - Укази</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <h1>Офіційний сайт Прокуратури</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="news.html">Новини</a></li>
-                <li><a href="decrees.html">Укази</a></li>
-                <li><a href="statements.html">Заяви</a></li>
-                <li><a href="about.html">Про нас</a></li>
-                <li><a href="law.html">Закон</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2>Укази та розпорядження</h2>
-        <ul>
-            <li><a href="#">Указ №123 про запобігання корупції</a> (15.05.2024)</li>
-            <li><a href="#">Розпорядження №456 щодо електронного документообігу</a> (10.05.2024)</li>
-        </ul>
-    </main>
-    <footer>
-        <p>© 2024 Прокуратура. Усі права захищені.</p>
-    </footer>
-</body>
-</html>
+<section class="documents-container">
+    <div class="search-bar">
+        <input type="text" placeholder="Пошук указів..." class="search-input">
+        <button class="search-button"><i class="fas fa-search"></i></button>
+    </div>
+
+    <div class="document-table">
+        <div class="table-header">
+            <div>№</div>
+            <div>Дата</div>
+            <div>Назва</div>
+            <div>Дії</div>
+        </div>
+        
+        <div class="table-row hover-grow">
+            <div>245/2024</div>
+            <div>12.06.2024</div>
+            <div>Про заходи протидії корупції</div>
+            <div>
+                <button class="doc-button"><i class="fas fa-eye"></i></button>
+                <button class="doc-button"><i class="fas fa-download"></i></button>
+            </div>
+        </div>
+        <!-- Додаткові рядки -->
+    </div>
+</section>
