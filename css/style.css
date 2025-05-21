@@ -1,42 +1,136 @@
+/* Глобальні стилі */
+:root {
+  --primary-color: #0056b3; /* Основний синій */
+  --secondary-color: #003366; /* Темно-синій */
+  --accent-color: #e63946; /* Червоний для акцентів */
+  --light-color: #f8f9fa; /* Світлий фон */
+  --dark-color: #212529; /* Темний текст */
+  --transition: all 0.3s ease;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    color: #333;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: var(--dark-color);
+  background-color: var(--light-color);
 }
 
+/* Хедер з градієнтом та тінню */
 header {
-    background: #0056b3;
-    color: white;
-    padding: 1rem;
-    text-align: center;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 1.5rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
+header h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 2rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Навігація з ефектом hover */
 nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1rem 0 0;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: var(--transition);
 }
 
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Основний контент з анімацією появи */
 main {
-    padding: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  animation: fadeIn 0.5s ease-out;
 }
 
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
-<a href="files/decree123.pdf" download>Указ №123</a>
+
+/* Картки для новин/указів */
+article {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+}
+
+article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+article h3 {
+  color: var(--primary-color);
+  margin-top: 0;
+}
+
+article small {
+  color: #6c757d;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* Кнопки */
+a[href="#"] {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a[href="#"]:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Футер */
+footer {
+  background: var(--secondary-color);
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
