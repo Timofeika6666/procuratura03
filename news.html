@@ -1,36 +1,66 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <!-- Заголовок та підключення стилів -->
+  <!-- Заголовок -->
 </head>
 <body>
   <header><!-- Як у statements.html --></header>
 
   <main class="container">
     <section class="news-archive">
-      <h2><i class="fas fa-newspaper"></i> Архів новин</h2>
-      <div class="filter-bar">
-        <input type="text" placeholder="Пошук за ключовими словами...">
-        <select>
-          <option>Усі категорії</option>
-          <option>Кримінальні справи</option>
-          <option>Реформи</option>
-        </select>
+      <h2 class="section-title"><i class="fas fa-newspaper"></i> Новини та події</h2>
+      
+      <div class="news-filter">
+        <div class="search-bar">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Пошук новин...">
+        </div>
+        <div class="filter-tabs">
+          <button class="active">Всі</button>
+          <button>Кримінальні справи</button>
+          <button>Реформи</button>
+        </div>
       </div>
-
-      <article class="news-article">
-        <div class="article-date">20.05.2024</div>
-        <h3>Затримання корупціонера у Києві</h3>
-        <p>Спільна операція з НАБУ викрила схему отримання хабарів...</p>
-        <a href="#" class="read-more">Читати далі <i class="fas fa-arrow-right"></i></a>
-      </article>
-
-      <article class="news-article">
-        <div class="article-date">18.05.2024</div>
-        <h3>Зміни в процедурі апеляцій</h3>
-        <p>Оновлення КПК стосовно строків подачі скарг...</p>
-        <a href="#" class="read-more">Читати далі <i class="fas fa-arrow-right"></i></a>
-      </article>
+      
+      <div class="news-grid">
+        <article class="news-card hover-3d">
+          <div class="news-media">
+            <img src="images/news1.jpg" alt="Новина">
+            <div class="news-date">20.05.2024</div>
+          </div>
+          <div class="news-content">
+            <h3>Затримання корупціонера у Києві</h3>
+            <p>Спільна операція з НАБУ викрила схему отримання хабарів...</p>
+            <a href="#" class="read-more">
+              Детальніше <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+        
+        <article class="news-card hover-3d">
+          <div class="news-media">
+            <div class="video-thumbnail">
+              <img src="images/news2.jpg" alt="Відео">
+              <i class="fas fa-play"></i>
+            </div>
+            <div class="news-date">18.05.2024</div>
+          </div>
+          <div class="news-content">
+            <h3>Зміни в процедурі апеляцій</h3>
+            <p>Оновлення КПК стосовно строків подачі скарг...</p>
+            <a href="#" class="read-more">
+              Детальніше <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="pagination">
+        <button><i class="fas fa-chevron-left"></i></button>
+        <button class="active">1</button>
+        <button>2</button>
+        <button><i class="fas fa-chevron-right"></i></button>
+      </div>
     </section>
   </main>
 
