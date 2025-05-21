@@ -1,22 +1,39 @@
-<section class="law-database">
-    <div class="law-filters">
-        <div class="filter-tabs">
-            <button class="tab-button active">ККУ</button>
-            <button class="tab-button">КПК</button>
-            <button class="tab-button">Конституція</button>
-        </div>
-    </div>
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <!-- Заголовок -->
+</head>
+<body>
+  <header><!-- Як раніше --></header>
 
-    <div class="law-content">
-        <div class="law-article scale-on-hover">
-            <h3><i class="fas fa-bookmark"></i> Стаття 123</h3>
-            <div class="article-text">
-                <p>Хабарництво - одержання посадовою особою будь-якої неправомірної вигоди...</p>
-            </div>
-            <button class="copy-law" data-tooltip="Копіювати цитату">
-                <i class="fas fa-copy"></i>
-            </button>
+  <main class="container">
+    <section class="law-search">
+      <h2><i class="fas fa-book-law"></i> Нормативні акти</h2>
+      <input type="text" placeholder="Введіть номер закону або назву..." class="search-bar">
+      
+      <div class="law-categories">
+        <div class="category-card">
+          <i class="fas fa-gavel"></i>
+          <h3>Кримінальний кодекс</h3>
+          <a href="#">Перейти до розділу</a>
         </div>
-        <!-- Додаткові статті -->
-    </div>
-</section>
+        <div class="category-card">
+          <i class="fas fa-balance-scale"></i>
+          <h3>КПК України</h3>
+          <a href="#">Перейти до розділу</a>
+        </div>
+      </div>
+
+      <div class="recent-updates">
+        <h3><i class="fas fa-history"></i> Останні зміни</h3>
+        <ul>
+          <li><a href="#">Закон №1234 від 12.05.2024 (про конфіскацію)</a></li>
+          <li><a href="#">Постанова №567 від 01.05.2024</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer><!-- Підвал --></footer>
+</body>
+</html>
