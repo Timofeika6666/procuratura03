@@ -1047,3 +1047,50 @@ input:focus, textarea:focus {
 .nav-link.active {
   transform: translateX(5px);
 }
+/* Додайте ці стилі до вашого файлу style.css */
+
+.law-article {
+  counter-reset: article-counter;
+  margin-bottom: 40px;
+}
+
+.article-item {
+  margin-bottom: 30px;
+  padding-left: 35px;
+  position: relative;
+}
+
+.article-item h4 {
+  font-size: 1.1rem;
+  color: var(--dark);
+  margin-bottom: 15px;
+  position: relative;
+  left: -35px;
+}
+
+.article-item h4::before {
+  content: "Стаття " counter(article-counter) ".";
+  counter-increment: article-counter;
+  position: absolute;
+  left: -35px;
+  width: 30px;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.article-item p,
+.article-item ul,
+.article-item ol {
+  margin-left: 0;
+  padding-left: 0;
+  clear: both;
+}
+
+.article-item ul,
+.article-item ol {
+  padding-left: 20px;
+}
+
+.article-item li {
+  margin-bottom: 8px;
+}
