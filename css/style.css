@@ -564,3 +564,94 @@ input:focus, textarea:focus {
   text-align: center;
   margin-top: 50px;
 }
+/* Стилі для сторінки указів */
+.decrees-tabs {
+  margin-top: 40px;
+}
+
+.tab-buttons {
+  display: flex;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 30px;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  padding: 12px 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #666;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+  color: var(--primary);
+}
+
+.tab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--primary);
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+.decree-card {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.decree-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.decree-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.decree-header i {
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-right: 15px;
+}
+
+.decree-header h3 {
+  margin: 0;
+  flex-grow: 1;
+}
+
+.decree-date {
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+.decree-body {
+  padding: 0 10px;
+}
+
+.decree-body p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
