@@ -1,69 +1,72 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <!-- Заголовок -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Новини | Генеральна Прокуратура</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header><!-- Як у statements.html --></header>
+  <header>
+    <div class="container">
+      <h1><i class="fas fa-scale-balanced"></i> Генеральна Прокуратура</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="news.html" class="active">Новини</a></li>
+          <li><a href="decrees.html">Укази</a></li>
+          <li><a href="statements.html">Заяви</a></li>
+          <li><a href="about.html">Про нас</a></li>
+          <li><a href="law.html">Закон</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <main class="container">
-    <section class="news-archive">
-      <h2 class="section-title"><i class="fas fa-newspaper"></i> Новини та події</h2>
-      
-      <div class="news-filter">
-        <div class="search-bar">
-          <i class="fas fa-search"></i>
-          <input type="text" placeholder="Пошук новин...">
+    <section class="animated-section">
+      <h2 class="section-title">Останні новини</h2>
+      <div class="features-grid">
+        <!-- Новина 1 -->
+        <div class="feature-card">
+          <i class="fas fa-gavel"></i>
+          <h3>Затримання корупціонера</h3>
+          <p>15 травня 2024 | Спільна операція з СБУ</p>
+          <div class="wave-hover"></div>
+          <a href="#" class="read-more">Детальніше <i class="fas fa-arrow-right"></i></a>
         </div>
-        <div class="filter-tabs">
-          <button class="active">Всі</button>
-          <button>Кримінальні справи</button>
-          <button>Реформи</button>
-        </div>
-      </div>
-      
-      <div class="news-grid">
-        <article class="news-card hover-3d">
-          <div class="news-media">
-            <img src="images/news1.jpg" alt="Новина">
-            <div class="news-date">20.05.2024</div>
-          </div>
-          <div class="news-content">
-            <h3>Затримання корупціонера у Києві</h3>
-            <p>Спільна операція з НАБУ викрила схему отримання хабарів...</p>
-            <a href="#" class="read-more">
-              Детальніше <i class="fas fa-arrow-right"></i>
-            </a>
-          </div>
-        </article>
         
-        <article class="news-card hover-3d">
-          <div class="news-media">
-            <div class="video-thumbnail">
-              <img src="images/news2.jpg" alt="Відео">
-              <i class="fas fa-play"></i>
-            </div>
-            <div class="news-date">18.05.2024</div>
-          </div>
-          <div class="news-content">
-            <h3>Зміни в процедурі апеляцій</h3>
-            <p>Оновлення КПК стосовно строків подачі скарг...</p>
-            <a href="#" class="read-more">
-              Детальніше <i class="fas fa-arrow-right"></i>
-            </a>
-          </div>
-        </article>
-      </div>
-      
-      <div class="pagination">
-        <button><i class="fas fa-chevron-left"></i></button>
-        <button class="active">1</button>
-        <button>2</button>
-        <button><i class="fas fa-chevron-right"></i></button>
+        <!-- Новина 2 -->
+        <div class="feature-card">
+          <i class="fas fa-user-shield"></i>
+          <h3>Нова програма захисту</h3>
+          <p>10 травня 2024 | Для свідків кримінальних справ</p>
+          <div class="wave-hover"></div>
+          <a href="#" class="read-more">Детальніше <i class="fas fa-arrow-right"></i></a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer><!-- Підвал --></footer>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <i class="fas fa-scale-balanced"></i>
+        <span>Генеральна Прокуратура</span>
+      </div>
+      <div class="footer-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Всі права захищені</p>
+    </div>
+  </footer>
+
+  <script src="js/animations.js"></script>
 </body>
 </html>
