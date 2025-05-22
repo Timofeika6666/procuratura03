@@ -303,3 +303,53 @@ input:focus, textarea:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(26, 35, 126, 0.2);
 }
+/* Стилі для указів */
+.decree-card {
+  position: relative;
+}
+.decree-date {
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+/* Стилі для заяв */
+.statement-card a {
+  margin-top: 1rem;
+}
+
+/* Стилі для "Про нас" */
+.about-card {
+  padding: 2.5rem;
+}
+.leader-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+.leader-card img {
+  width: 100px;
+  border-radius: 8px;
+  border: 3px solid var(--primary);
+}
+
+/* Стилі для закону */
+.law-article {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.law-chapter {
+  margin-bottom: 2rem;
+}
+.law-article-item {
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid var(--primary);
+}
+.law-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
