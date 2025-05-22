@@ -1,34 +1,65 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <!-- Заголовок як на головній -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Про нас | Генеральна Прокуратура</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <!-- Хедер як на головній -->
+    <div class="container">
+      <h1><i class="fas fa-scale-balanced"></i> Генеральна Прокуратура</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="news.html">Новини</a></li>
+          <li><a href="decrees.html">Укази</a></li>
+          <li><a href="statements.html">Заяви</a></li>
+          <li><a href="about.html" class="active">Про нас</a></li>
+          <li><a href="law.html">Закон</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main class="container">
-    <section class="animated-section">
-      <h2 class="section-title">Про Генеральну Прокуратуру</h2>
-      
-      <div class="feature-card about-card">
-        <div class="about-content">
-          <div class="about-text">
-            <h3><i class="fas fa-landmark"></i> Наша місія</h3>
-            <p>Генеральна Прокуратура України - центральний орган, що забезпечує дотримання законів та захищає права громадян.</p>
-            
-            <h4>Керівництво:</h4>
-            <div class="leader-card">
+    <section class="about-section">
+      <div class="about-header">
+        <h2 class="section-title">Про Генеральну Прокуратуру</h2>
+        <div class="about-image">
+          <img src="img/prosecutor-building.jpg" alt="Будівля прокуратури">
+        </div>
+      </div>
+
+      <div class="about-content">
+        <div class="about-mission">
+          <h3><i class="fas fa-bullseye"></i> Наша місія</h3>
+          <p>Генеральна Прокуратура України - центральний орган, що забезпечує дотримання законів та захищає права громадян. Ми діємо на принципах верховенства права, професіоналізму та неупередженості.</p>
+        </div>
+
+        <div class="leadership">
+          <h3><i class="fas fa-user-tie"></i> Керівництво</h3>
+          <div class="leader-card">
+            <div class="leader-photo">
               <img src="img/prosecutor-general.jpg" alt="Генеральний прокурор">
-              <div>
-                <h5>Тимофейко Громов</h5>
-                <p>Генеральний прокурор України<br>Призначений 21.05.2025</p>
+            </div>
+            <div class="leader-info">
+              <h4>Тимофейко Громов</h4>
+              <p class="position">Генеральний прокурор України</p>
+              <p class="appointment">Призначений: 21.05.2025</p>
+              <div class="leader-contacts">
+                <p><i class="fas fa-envelope"></i> prosecutor@gp.gov.ua</p>
               </div>
             </div>
           </div>
-          
-          <div class="about-stats">
+        </div>
+
+        <div class="statistics">
+          <h3><i class="fas fa-chart-bar"></i> Наша діяльність у цифрах</h3>
+          <div class="stats-grid">
             <div class="stat-item">
               <i class="fas fa-gavel"></i>
               <span>1,250+</span>
@@ -39,6 +70,11 @@
               <span>500+</span>
               <p>працівників</p>
             </div>
+            <div class="stat-item">
+              <i class="fas fa-balance-scale"></i>
+              <span>98%</span>
+              <p>виграних справ</p>
+            </div>
           </div>
         </div>
       </div>
@@ -46,7 +82,7 @@
   </main>
 
   <footer>
-    <!-- Футер як на головній -->
-  </footer>
-</body>
-</html>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <i class="fas fa-scale-balanced"></i>
+        <span>Генеральна Прок
