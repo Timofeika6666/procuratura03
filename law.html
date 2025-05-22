@@ -79,13 +79,61 @@
             </div>
           </article>
 
-          <!-- Інші розділи аналогічно -->
-          
-          <!-- Навігація -->
-          <div class="law-pagination">
-            <a href="#" class="page-btn"><i class="fas fa-arrow-left"></i> Попередній</a>
-            <a href="#section2" class="page-btn">Наступний <i class="fas fa-arrow-right"></i></a>
-          </div>
+          <!-- Розділ 3 -->
+          <article id="section3" class="law-article">
+            <h3><i class="fas fa-user-tie"></i> Розділ 3. СТАТУС ПРОКУРОРА</h3>
+            
+            <div class="article-block">
+              <h4>Стаття 8. Статус</h4>
+              <p>Прокурором може бути громадянин України, який:</p>
+              <ul>
+                <li>Має вищу юридичну освіту</li>
+                <li>Володіє державною мовою</li>
+                <li>Не має судимості</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Розділ 4 -->
+          <article id="section4" class="law-article">
+            <h3><i class="fas fa-tasks"></i> Розділ 4. ПОВНОВАЖЕННЯ</h3>
+            
+            <div class="article-block">
+              <h4>Стаття 12. Обов'язки</h4>
+              <p>Прокурор має право:</p>
+              <ol>
+                <li>Здійснювати нагляд за дотриманням законів</li>
+                <li>Оскаржувати незаконні рішення</li>
+                <li>Вносити подання про усунення порушень</li>
+              </ol>
+            </div>
+          </article>
+
+          <!-- Розділ 5 -->
+          <article id="section5" class="law-article">
+            <h3><i class="fas fa-handshake"></i> Розділ 5. ПРИЗНАЧЕННЯ</h3>
+            
+            <div class="article-block">
+              <h4>Стаття 20. Генпрокурор</h4>
+              <p>1. Генпрокурора призначає Президент за згодою Верховної Ради.</p>
+              <p>2. Строк повноважень - 6 років.</p>
+            </div>
+          </article>
+
+          <!-- Розділ 6 -->
+          <article id="section6" class="law-article">
+            <h3><i class="fas fa-balance-scale"></i> Розділ 6. ВІДПОВІДАЛЬНІСТЬ</h3>
+            
+            <div class="article-block">
+              <h4>Стаття 21. Підстави</h4>
+              <p>Прокурора можуть притягнути до відповідальності за:</p>
+              <ul>
+                <li>Порушення закону</li>
+                <li>Неналежне виконання обов'язків</li>
+                <li>Втрату довіри</li>
+              </ul>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -109,7 +157,8 @@
       link.addEventListener('click', function(e) {
         e.preventDefault();
         document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
+          behavior: 'smooth',
+          block: 'start'
         });
       });
     });
