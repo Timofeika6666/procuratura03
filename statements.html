@@ -1,63 +1,120 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <!-- Заголовок як на головній -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Заяви | Генеральна Прокуратура</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <!-- Хедер як на головній -->
+    <div class="container">
+      <h1><i class="fas fa-scale-balanced"></i> Генеральна Прокуратура</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="news.html">Новини</a></li>
+          <li><a href="decrees.html">Укази</a></li>
+          <li><a href="statements.html" class="active">Заяви</a></li>
+          <li><a href="about.html">Про нас</a></li>
+          <li><a href="law.html">Закон</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main class="container">
-    <section class="animated-section">
-      <h2 class="section-title">Форми звернень</h2>
+    <section class="statements-section">
+      <h2 class="section-title">Онлайн-заяви</h2>
+      <p class="section-subtitle">Оберіть тип звернення для заповнення форми</p>
       
-      <div class="features-grid">
-        <!-- Заява 1 -->
-        <div class="feature-card statement-card">
-          <i class="fas fa-file-alt"></i>
-          <h3>Заява: Рейд на Центральний ринок</h3>
-          <p>Форма для повідомлення про правопорушення</p>
+      <div class="statements-grid">
+        <!-- Картка заяви 1 -->
+        <div class="statement-card">
+          <div class="statement-icon">
+            <i class="fas fa-store"></i>
+          </div>
+          <h3>Рейд на Центральний ринок</h3>
+          <p>Повідомлення про правопорушення у торгівельних точках</p>
+          <div class="statement-footer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdibVAwJvpu1Qnlyz8pt8-bL2HBcemKLCL5YjnHErfCWHSWVg/viewform" 
+               class="cta-button" target="_blank">
+               Заповнити <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
           <div class="wave-hover"></div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdibVAwJvpu1Qnlyz8pt8-bL2HBcemKLCL5YjnHErfCWHSWVg/viewform?usp=header" 
-             class="cta-button" target="_blank">Заповнити <i class="fas fa-external-link-alt"></i></a>
         </div>
 
-        <!-- Заява 2 -->
-        <div class="feature-card statement-card">
-          <i class="fas fa-gavel"></i>
-          <h3>Заява: Рейд на Картель</h3>
+        <!-- Картка заяви 2 -->
+        <div class="statement-card">
+          <div class="statement-icon">
+            <i class="fas fa-skull"></i>
+          </div>
+          <h3>Рейд на Картель</h3>
           <p>Анонімне повідомлення про злочинні угруповання</p>
+          <div class="statement-footer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdibVAwJvpu1Qnlyz8pt8-bL2HBcemKLCL5YjnHErfCWHSWVg/viewform" 
+               class="cta-button" target="_blank">
+               Заповнити <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
           <div class="wave-hover"></div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdibVAwJvpu1Qnlyz8pt8-bL2HBcemKLCL5YjnHErfCWHSWVg/viewform?usp=header"
-             class="cta-button" target="_blank">Заповнити <i class="fas fa-external-link-alt"></i></a>
         </div>
 
-        <!-- Заява 3 -->
-        <div class="feature-card statement-card">
-          <i class="fas fa-balance-scale"></i>
+        <!-- Картка заяви 3 -->
+        <div class="statement-card">
+          <div class="statement-icon">
+            <i class="fas fa-file-contract"></i>
+          </div>
           <h3>Заявка до Прокуратури</h3>
           <p>Офіційне звернення громадянина</p>
+          <div class="statement-footer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScyEFyzH92guBSSMf3SBFd9ywncg-w0NYayv0qvcWwd_Gn7Gw/viewform" 
+               class="cta-button" target="_blank">
+               Заповнити <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
           <div class="wave-hover"></div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScyEFyzH92guBSSMf3SBFd9ywncg-w0NYayv0qvcWwd_Gn7Gw/viewform?usp=header"
-             class="cta-button" target="_blank">Заповнити <i class="fas fa-external-link-alt"></i></a>
         </div>
 
-        <!-- Заява 4 -->
-        <div class="feature-card statement-card">
-          <i class="fas fa-user-shield"></i>
+        <!-- Картка заяви 4 -->
+        <div class="statement-card">
+          <div class="statement-icon">
+            <i class="fas fa-user-tie"></i>
+          </div>
           <h3>Скарга на працівника</h3>
           <p>На державного службовця</p>
+          <div class="statement-footer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfhwVRX--4rZtifZaqVwgpH75ZrwhcZPuUJekG-iPHpTf6VBQ/viewform" 
+               class="cta-button" target="_blank">
+               Заповнити <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
           <div class="wave-hover"></div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfhwVRX--4rZtifZaqVwgpH75ZrwhcZPuUJekG-iPHpTf6VBQ/viewform?usp=header"
-             class="cta-button" target="_blank">Заповнити <i class="fas fa-external-link-alt"></i></a>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <!-- Футер як на головній -->
+    <div class="footer-content">
+      <div class="footer-logo">
+        <i class="fas fa-scale-balanced"></i>
+        <span>Генеральна Прокуратура</span>
+      </div>
+      <div class="footer-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Всі права захищені</p>
+    </div>
   </footer>
+
+  <script src="js/animations.js"></script>
 </body>
 </html>
