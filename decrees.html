@@ -10,41 +10,127 @@
 </head>
 <body>
   <header>
-    <!-- Хедер як на головній -->
+    <div class="container">
+      <h1><i class="fas fa-scale-balanced"></i> Генеральна Прокуратура</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="news.html">Новини</a></li>
+          <li><a href="decrees.html" class="active">Укази</a></li>
+          <li><a href="statements.html">Заяви</a></li>
+          <li><a href="about.html">Про нас</a></li>
+          <li><a href="law.html">Закон</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main class="container">
-    <section class="animated-section">
+    <section class="decrees-section">
       <h2 class="section-title">Офіційні укази</h2>
       
-      <div class="features-grid">
-        <!-- Указ про призначення -->
-        <div class="feature-card decree-card">
-          <i class="fas fa-scroll"></i>
-          <h3>Указ №001-2025</h3>
-          <p class="decree-date">21.05.2025</p>
-          <div class="decree-content">
-            <p>Про призначення Генерального Прокурора</p>
-            <p>Згідно зі ст. 20 Закону "Про Прокуратуру", призначити Тимофейка Громова на посаду Генерального Прокурора України строком на 3 місяці.</p>
-          </div>
-          <div class="wave-hover"></div>
-          <a href="#" class="cta-button">Завантажити PDF <i class="fas fa-download"></i></a>
+      <div class="decrees-tabs">
+        <!-- Кнопки для перемикання вкладок -->
+        <div class="tab-buttons">
+          <button class="tab-btn active" data-tab="current">Діючі</button>
+          <button class="tab-btn" data-tab="archive">Архів</button>
+          <button class="tab-btn" data-tab="special">Спеціальні</button>
         </div>
 
-        <!-- Інші укази -->
-        <div class="feature-card decree-card">
-          <i class="fas fa-file-signature"></i>
-          <h3>Указ №045-2024</h3>
-          <p>Про зміни в Кримінальному процесуальному кодексі</p>
-          <div class="wave-hover"></div>
-          <a href="#" class="cta-button">Завантажити</a>
+        <!-- Вміст вкладок -->
+        <div class="tab-content">
+          <!-- Вкладка "Діючі" -->
+          <div id="current" class="tab-pane active">
+            <div class="decree-card">
+              <div class="decree-header">
+                <i class="fas fa-file-signature"></i>
+                <h3>Указ №001-2025</h3>
+                <span class="decree-date">21.05.2025</span>
+              </div>
+              <div class="decree-body">
+                <p><strong>Про призначення Генерального Прокурора</strong></p>
+                <p>Згідно зі ст. 20 Закону "Про Прокуратуру", призначити Тимофейка Громова на посаду Генерального Прокурора України строком на 3 місяці.</p>
+              </div>
+            </div>
+
+            <div class="decree-card">
+              <div class="decree-header">
+                <i class="fas fa-gavel"></i>
+                <h3>Указ №045-2024</h3>
+                <span class="decree-date">15.03.2024</span>
+              </div>
+              <div class="decree-body">
+                <p><strong>Про зміни в Кримінальному процесуальному кодексі</strong></p>
+                <p>Внести зміни до статей 123, 145 та 201 КПК України щодо процедури досудового розслідування.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Вкладка "Архів" -->
+          <div id="archive" class="tab-pane">
+            <div class="decree-card">
+              <div class="decree-header">
+                <i class="fas fa-archive"></i>
+                <h3>Указ №112-2023</h3>
+                <span class="decree-date">10.12.2023</span>
+              </div>
+              <div class="decree-body">
+                <p><strong>Про затвердження штатного розпису</strong></p>
+                <p>Затвердити штатний розпис Генеральної Прокуратури на 2024 рік.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Вкладка "Спеціальні" -->
+          <div id="special" class="tab-pane">
+            <div class="decree-card">
+              <div class="decree-header">
+                <i class="fas fa-star"></i>
+                <h3>Указ №SP-2025</h3>
+                <span class="decree-date">01.01.2025</span>
+              </div>
+              <div class="decree-body">
+                <p><strong>Про особливий режим роботи</strong></p>
+                <p>Встановити особливий режим роботи прокуратур у зоні ООС.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <!-- Футер як на головній -->
+    <div class="footer-content">
+      <div class="footer-logo">
+        <i class="fas fa-scale-balanced"></i>
+        <span>Генеральна Прокуратура</span>
+      </div>
+      <div class="footer-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Всі права захищені</p>
+    </div>
   </footer>
+
+  <script>
+    // Скрипт для перемикання вкладок
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Видаляємо активний клас у всіх кнопок і вкладок
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+        
+        // Додаємо активний клас до обраної кнопки і вкладки
+        btn.classList.add('active');
+        const tabId = btn.getAttribute('data-tab');
+        document.getElementById(tabId).classList.add('active');
+      });
+    });
+  </script>
 </body>
 </html>
