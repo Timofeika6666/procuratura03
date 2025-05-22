@@ -1,42 +1,95 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <!-- Заголовок як на головній -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Законодавство | Генеральна Прокуратура</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <!-- Хедер як на головній -->
+    <div class="container">
+      <h1><i class="fas fa-scale-balanced"></i> Генеральна Прокуратура</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="news.html">Новини</a></li>
+          <li><a href="decrees.html">Укази</a></li>
+          <li><a href="statements.html">Заяви</a></li>
+          <li><a href="about.html">Про нас</a></li>
+          <li><a href="law.html" class="active">Закон</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main class="container">
-    <section class="animated-section">
-      <h2 class="section-title">Законодавча база</h2>
+    <section class="law-section">
+      <h2 class="section-title">Закон "Про Прокуратуру"</h2>
       
-      <div class="law-article">
-        <h3><i class="fas fa-book"></i> Закон "Про Прокуратуру"</h3>
-        
-        <div class="law-chapter">
-          <h4>Розділ 1. ЗАСАДИ ОРГАНІЗАЦІЇ І ДІЯЛЬНОСТІ ПРОКУРАТУРИ</h4>
-          
-          <div class="law-article-item">
-            <h5>Стаття 1. Прокуратура</h5>
-            <p>1.1 Прокуратура – орган виконавчої влади, який здійснює вищий нагляд за дотриманням законодавства, прав, свобод людини та громадянина.</p>
-            <p>1.2. Прокуратура України становить єдину систему, яка в порядку, передбаченому цим Законом, здійснює встановлені Конституцією Східної України функції...</p>
-          </div>
-          
-          <!-- Інші статті -->
+      <div class="law-content">
+        <div class="law-toc">
+          <h3><i class="fas fa-list-ol"></i> Зміст</h3>
+          <ul>
+            <li><a href="#section1">Розділ 1. Засади організації</a></li>
+            <li><a href="#section2">Розділ 2. Організаційні основи</a></li>
+            <li><a href="#section3">Розділ 3. Статус прокурора</a></li>
+            <li><a href="#section4">Розділ 4. Повноваження</a></li>
+            <li><a href="#section5">Розділ 5. Призначення</a></li>
+            <li><a href="#section6">Розділ 6. Відповідальність</a></li>
+          </ul>
         </div>
-        
-        <div class="law-navigation">
-          <button class="cta-button"><i class="fas fa-arrow-left"></i> Попередній розділ</button>
-          <button class="cta-button">Наступний розділ <i class="fas fa-arrow-right"></i></button>
+
+        <div class="law-articles">
+          <article id="section1" class="law-article">
+            <h3><i class="fas fa-landmark"></i> Розділ 1. ЗАСАДИ ОРГАНІЗАЦІЇ І ДІЯЛЬНОСТІ ПРОКУРАТУРИ</h3>
+            
+            <div class="article-item">
+              <h4>Стаття 1. Прокуратура</h4>
+              <p>1.1 Прокуратура – орган виконавчої влади, який здійснює вищий нагляд за дотриманням законодавства, прав, свобод людини та громадянина.</p>
+              <p>1.2. Прокуратура України становить єдину систему, яка в порядку, передбаченому цим Законом, здійснює встановлені Конституцією Східної України функції з метою захисту прав і свобод людини, загальних інтересів суспільства та держави.</p>
+            </div>
+
+            <div class="article-item">
+              <h4>Стаття 2. Функції прокуратури</h4>
+              <p>1. На прокуратуру покладаються такі функції:</p>
+              <ul>
+                <li>Представлення сторони обвинувачення в суді</li>
+                <li>Організація прокурорських перевірок</li>
+                <li>Здійснення наглядових заходів</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Інші розділи -->
         </div>
+      </div>
+
+      <div class="law-download">
+        <a href="#" class="cta-button"><i class="fas fa-download"></i> Завантажити повний текст закону</a>
       </div>
     </section>
   </main>
 
   <footer>
-    <!-- Футер як на головній -->
+    <div class="footer-content">
+      <div class="footer-logo">
+        <i class="fas fa-scale-balanced"></i>
+        <span>Генеральна Прокуратура</span>
+      </div>
+      <div class="footer-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Всі права захищені</p>
+    </div>
   </footer>
+
+  <script src="js/animations.js"></script>
 </body>
 </html>
